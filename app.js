@@ -1,4 +1,15 @@
 var Percolator = require('percolator').Percolator;
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/lexicon_test');
+
+var db = mongoose.connection;
+
+db.on("error", console.error.bind(console, 'connection error:'));
+
+db.once('open', function () {
+  console.log("Database Connection Successful");
+});
 
 var server = new Percolator({
   resourcePath: "/api",

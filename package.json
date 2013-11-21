@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "lexicon-api",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -9,6 +9,7 @@
     "express": "3.4.4",
     "jade": "*",
     "percolator": "~1.2.1",
-    "node-dev": "~2.1.0"
+    "node-dev": "~2.1.0",
+    "mongoose": "~3.8.1"
   }
 }
